@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Periodic Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Interactive Periodic Table</h1>
+
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search by element name, symbol, or atomic number..."
+                id="searchInput">
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All Elements</button>
+            <button class="filter-btn" data-filter="metal">Metals</button>
+            <button class="filter-btn" data-filter="nonmetal">Nonmetals</button>
+            <button class="filter-btn" data-filter="noble-gas">Noble Gases</button>
+            <button class="filter-btn" data-filter="alkali-metal">Alkali Metals</button>
+            <button class="filter-btn" data-filter="alkaline-earth">Alkaline Earth Metals</button>
+            <button class="filter-btn" data-filter="transition-metal">Transition Metals</button>
+            <button class="filter-btn" data-filter="metalloid">Metalloids</button>
+            <button class="filter-btn" data-filter="lanthanide">Lanthanides</button>
+            <button class="filter-btn" data-filter="actinide">Actinides</button>
+        </div>
+
+    <div class="periodic-table" id="periodicTable"></div>
+    </div>
+
+    <script type="module" src="elements.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
